@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 1.3em;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
+            padding: 10px;
+            background-color: grey;
+            display: inline-block;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        mark#correto{
+            padding: 3px;
+            background-color: rgb(0, 221, 0);
+            color: rgb(10, 49, 0);
+        }
+        mark#errado{
+            padding: 3px;
+            background-color: red;
+            color: rgb(46, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ano bissexto</h1>
+    <p onclick="verificar()">Verificar</p>
+    <div id="res">Clique no botão para iniciar!</div>
+    <script>
+        function verificar(){
+            var ano = prompt("Qual ano você quer verificar se é bissexto?")
+            var resultado = window.document.getElementById("res")
+            resultado.innerHTML = ""
+            var titulo = window.document.createElement("h1")
+            titulo.innerText = `Analisando o ano de ${ano}...`
+            resultado.appendChild(titulo)
+            if(ano%4==0){
+                resultado.innerHTML += `o ano  de ${ano} <strong>
+                    <mark id="correto">é bissexto!\u2705</mark>
+                </strong> `
+            }
+            else{
+                resultado.innerHTML += `o ano  de ${ano} <strong>
+                    <mark id="errado">não é bissexto!\u274C</mark>
+                </strong> `
+            }
+        }
+    </script>
+</body>
+</html>

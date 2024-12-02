@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            padding: 15px;
+            background-color: rgb(187, 187, 187);
+            border: 1px solid rgb(12, 12, 12);
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversos de temperatura</h1>
+    <p onclick="converter()">Converter</p>
+    <div id="res">Clique no botão acima!</div>
+    <script>
+        function converter(){
+            var temp = prompt("Digite uma temperatura em Grau Celcius(ºC)")
+            var resultado = window.document.getElementById("res")
+            var elemento = window.document.createElement('h1')
+            resultado.innerHTML = ""
+            elemento.innerText = `A temperatura de ${temp}ºC, corresponde a...`
+            resultado.appendChild(elemento)
+            resultado.innerHTML += `<strong>${temp-0+273.15}K</strong> (kelvin)<br>`
+            resultado.innerHTML += `<strong>${(temp*9/5)+32}°F</strong> (Fahrenheit)<br>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            padding: 15px;
+            background-color: rgb(187, 187, 187);
+            border: 1px solid rgb(12, 12, 12);
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Troco</h1>
+    <p onclick="verificar()">Comprar produto</p>
+    <script>
+        function verificar(){
+            var produto = prompt("Qual produto você quer comprar?")
+            var preco = prompt(`Qual o preço do ${produto}?`)
+            var pago = prompt(`Quanto você pagou no ${produto}?`)
+            alert(`Você comprou o ${produto} por ${preco} reais\ndeu o valor de ${pago} reais e deverá receber de troco ${(Number(pago)-Number(preco))} reais.\nvolte sempre`)
+        }
+    </script>
+</body>
+</html>

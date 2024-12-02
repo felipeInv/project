@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 12</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 1.3em;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.425);
+            padding: 10px;
+            background-color: grey;
+            display: inline-block;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <p onclick="verificar()">Verificar</p>
+    <div id="res">Clique no botão acima para analisar a mudança de preço.</div>
+    <script>
+        function verificar(){
+            var antes = prompt("Qual o valor antigo?")
+            var atual = prompt("Qual o valor atual")
+            antes = parseInt(antes)
+            atual = parseInt(atual)
+            var resultado = window.document.getElementById("res")
+            var titulo = window.document.createElement('h1')
+            resultado.innerHTML = ""
+            titulo.innerText = "Analisando os valores informados"
+            resultado.appendChild(titulo)
+            resultado.innerHTML += `O produto custava R$${antes} e agora custa R$${atual}.<br>`
+            if(antes>atual){
+            resultado.innerHTML += `Hoje o produto está mais barato.<br>`
+            resultado.innerHTML += `O preço caiu R$${antes-atual} em relação ao preço anterior.<br>`
+            resultado.innerHTML += `uma variação de ${100-((atual/antes)*100)}% para baixo`
+            }
+            else{
+            resultado.innerHTML += `Hoje o produto está mais caro.<br>`
+            resultado.innerHTML += `O preço subiu R$${atual-antes} em relação ao preço anterior.<br>`
+            resultado.innerHTML += `uma variação de ${(((atual/antes)*100)-100).toFixed(2)}% para cima`
+            }
+        }
+    </script>
+</body>
+</html>

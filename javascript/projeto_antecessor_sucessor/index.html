@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            padding: 15px;
+            background-color: rgb(187, 187, 187);
+            border: 1px solid rgb(12, 12, 12);
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e depois</h1>
+    <p onclick="verificar()">Antecessor e Sucessor</p>
+    <script>
+        function verificar(){
+           var numero = prompt("Digite um número inteiro qualquer")
+           var cima = numero - 1 + 2
+           alert(`Antes do ${numero} vem o ${numero - 1},\ne depois do ${numero} vem o ${cima}`)
+        }
+    </script>
+</body>
+</html>

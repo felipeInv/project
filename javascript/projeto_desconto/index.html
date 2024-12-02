@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 8</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            padding: 15px;
+            background-color: rgb(187, 187, 187);
+            border: 1px solid rgb(12, 12, 12);
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular desconto</h1>
+    <p onclick="converter()">Desconto 10%</p>
+    <div id="res">Clique no botão acima!</div>
+    <script>
+        function converter(){
+            var produto = prompt("Qual o nome do produto?")
+            var preco = prompt(`Qual o valor do ${produto}?`)
+            var resultado = window.document.getElementById("res")
+            var titulo = window.document.createElement("h1")
+            resultado.innerHTML = ""
+            titulo.innerText = `Calculando desconto de 10% para ${produto}`
+            resultado.appendChild(titulo)
+            resultado.innerHTML += `O preço original era R$${preco}.<br>`
+            resultado.innerHTML += `Você acaba de ganhar R$${(preco*0.1).toFixed(2)} de desconto (-10%).<br>`
+            resultado.innerHTML += `No fim, você vai pagar ${preco-((preco*0.1)).toFixed(2)} no produto ${produto}.`
+        }
+    </script>
+</body>
+</html>
