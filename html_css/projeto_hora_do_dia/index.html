@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Hora do dia</h1>
+        <div id="spaceHora">
+            <h2 id="hora">Agora são</h2>
+            <img src="img/pexels-matheus-rocha-2282322.jpg" id="photo">
+        </div>
+        <p>@designer_contrast</p>
+    </main>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var txt = window.document.getElementById('hora')
+        var corpo = window.document.body
+        txt.innerHTML += ` ${hora} horas.`
+        if(hora > 0 && hora < 12){
+            corpo.style.background = 'rgb(209, 188, 71)'
+            window.document.getElementById('photo').src = "img/manha.jpg"
+        }
+        else if(hora >= 12 && hora < 18){
+            corpo.style.background = 'rgb(107, 56, 47)'
+            window.document.getElementById('photo').src = "img/tarde.jpg"
+        }
+        else{
+            corpo.style.background = 'rgb(56, 47, 107)'
+            window.document.getElementById('photo').src = "img/noite.jpg"
+        }
+    </script>
+</body>
+</html>

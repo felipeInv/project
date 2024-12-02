@@ -1,0 +1,55 @@
+Site
+
+Design:
+	- logo ok
+	- Cor 
+		Rosa: #e86f9c
+		Azul: #02c7cd
+		Azul Claro: #84dbde
+		Branco: #ffffff
+		Preto: #000000
+	- Fonte
+
+3 páginas
+	- Início
+		- Sobre
+		- Especialidades
+		- Avisos
+		- Rodapé
+
+	- Bolos
+		- Apresentação para os bolos (opção de adicionar a quantidade)
+			- Bolos (grande e pequeno):
+				- Churros
+				- Brigadeiro
+				- Limão
+				- Morango
+				- Cenoura calda chocolate
+				
+			- Brownie(grande e pequeno):
+				- Chocolate
+			- Donuts:
+				- Recheio de chocolate
+				- Recheio de morango
+				- Beijinho (branco)
+			- Bolo de pote:
+				- Chocolate
+				- Morango
+				- Ninho com Nutella
+			- Cupcake:
+				- Morango
+				- Chocolate
+				- Chantilly (branco)
+				- Doce de leite
+
+		- Produtos com foto, descrição, espaço para comentário e quantidade para aumentar ou diminuir
+		- Rodapé
+
+	- Encomendas personalizadas
+		- Entrar em contato para encomendas personalizadas
+		- Forms
+			- Nome
+			- Telefone para contato
+			- Descreva sua encomenda
+		- Botão para enviar
+		- Rodapé

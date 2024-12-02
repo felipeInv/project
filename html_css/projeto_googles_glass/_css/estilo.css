@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'apexmed';
+    src: url(../_fonts/ApexNew-Medium.ttf );
+}
+@font-face {
+    font-family: 'apexhev';
+    src: url(../_fonts/ApexNew-Heavy.ttf );
+}
+@font-face {
+    font-family: 'apexbok';
+    src: url(../_fonts/ApexNew-Book.ttf );
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #171717;
+    color: #ffffff
+}
+body h1{
+    font-family: 'apexhev';
+}
+body h2{
+    font-family: 'apexmed';  
+}
+body h3{
+    font-family: 'apexbok';  
+}
+body h4{
+    font-family: 'apexbok';  
+}
+body p{
+    font-family: 'apexbok';
+}
+body a{
+    color: white;
+    transition: color 0.2s;
+}
+body a:hover{
+    color: rgb(0, 184, 0);
+}
+header#cabecalho img#foto-oculos{
+position: absolute;
+left: 1100px;
+top: 70px;
+}
+div#interface{
+    width: 1100px;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+h2{
+    color: rgb(0, 184, 0);
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+    color: white;
+}
+h4{
+    color: rgb(119, 119, 119);
+}
+/*formtação de imagem de 2 pessoas */
+figure.foto-legenda{
+    position: relative;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px black;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: white;
+    width: 100%;
+    height: 120%;
+    border-radius: 30px;
+    padding: 10px ;
+    box-sizing: border-box;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    transition:opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+   opacity: 1; 
+} 
+/*formtação de menu */
+nav#menu {
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 380px;
+}
+nav#menu li{
+    display: inline-block;  
+    background-color: #6b6b6b;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px black;
+    transition: 0.3s;
+}
+nav#menu li:hover{
+    background-color:  rgba(17, 17, 17, 0.3);
+    color: white;
+    box-shadow: 0px 0px 3px rgb(8, 223, 36);
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: white;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color:rgb(0, 184, 0);
+    text-decoration: none;
+}
+/*cabeçalho */
+header#cabecalho img{ 
+ border-radius: 50px; 
+}
+header#cabecalho{
+    border-bottom: 1px rgb(119, 119, 119) solid;
+    height: 170px;
+    border-radius: 10px;
+}
+header#cabecalho h1{
+    font-family: 'apexhev';
+}
+/*corpo*/
+section#corpo {
+    display: block;
+    width: 640px;
+    height: 1750px;
+    padding-right: 30px;
+    padding-bottom: 180px;
+    float: left;
+    border-right: 1px white solid;
+}
+aside#lado {
+    display: block;
+    background-color: #414141;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+    width: 400px;
+    float: right;
+}
+aside#lado  h1{
+    font-family: 'apexhev';
+}
+aside#lado  h2{
+    background-color: #313131;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+aside#lado  h3{
+   color: rgb(0, 184, 0);
+   font-style: italic ;
+   text-align: justify;
+}
+footer#rodape {
+    clear: both;
+    display: block;
+    border-top: 1px white solid;
+    text-align: center;
+}
+footer#rodape h4:hover{
+    color: white;
+    transition: 0.2s
+}
+footer#rodape h4:hover{
+    color: rgb(0, 184, 0);
+}
+/*tabela*/
+table{
+    box-shadow: 2px 2px 4px rgba(0, 184, 0,.7);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+}
+table caption{
+    color: rgb(0, 143, 7);
+    font-style: italic;
+    font-size: 15px;
+}
+table caption span {
+    display: block;
+    float: right;
+    font-size: 10px;
+    color: rgba(255,255,255,.5);
+    margin-top: 10px;
+}
+td{
+    font-family: 'apexbok'; 
+    padding: 5px;
+    border: black solid 2px;
+}
+td.c1{
+    background-color: rgb(34, 34, 34);
+    text-align: right;
+}
+td.c2{
+    background-color: rgb(97, 97, 97); 
+    text-align: left;
+}
+/*artigo*/
+article#artigo1 h2{
+    background-color: #313131;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+article#artigo1 h3{
+    font-family: 'apexhev';
+    padding-left: 27px;
+    color: rgb(0, 184, 0);
+}
+/*vídeo*/
+video#video-esq{
+    position: relative;
+    left: 50px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgb(0, 184, 0);
+}

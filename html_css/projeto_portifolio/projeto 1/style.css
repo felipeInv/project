@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+:root{
+    --verde: #08db08;
+    --verde5: #08db0891;
+    --laranja: rgb(230, 151,4); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom,#1d1d1d,#000000);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    margin-bottom: 50px;
+}
+img.myfoto{
+    max-width: 15vw;
+    border-radius: 50%;
+}
+
+h1{
+    color: var(--verde);
+}
+
+h2{
+    margin: 10px;
+}
+
+h3{
+    font-size: 1em;
+}
+section.inicio a{
+    display: block;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0px 0px 4px black;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+section.inicio a:hover{
+    box-shadow: 0px 0px 2px var(--verde,0.4);
+    color: var(--verde);
+}
+
+
+
+
+
+.skills{
+    margin: auto;
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #585858;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.637);
+}
+.skills ul{
+    list-style: none;
+}
+.skills ul li{
+    margin: 20px 0px;
+    text-align: left;
+}
+.skills .barras{
+    margin-top: 5px;
+    display: block;
+    background-color: #3d3d3d;
+    height: 3vh;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.barras > span{
+    height: 3vh;
+    background: linear-gradient(to right, #08db08, rgb(185, 204, 9));
+    position: absolute;
+}
+.barras > span.prog{
+    width: 15%;
+    animation: prog 2s ease-in-out;
+}
+.barras > span.inv{
+    width: 50%;
+    animation: inv 2s ease-in-out;
+}
+.barras > span.vid{
+    width: 30%;
+    animation: vid 2s ease-in-out;
+}
+.barras > span.dsn{
+    width: 40%;
+    animation: dsn 2s ease-in-out;
+}
+.barras > span.d3{
+    width: 10%;
+    animation: d3 2s ease-in-out;
+}
+.barras > span.mark{
+    width: 15%;
+    animation: mark 2s ease-in-out;
+}
+@keyframes prog {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes inv {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes vid {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes dsn {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes d3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+}
+@keyframes mark {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+
+
+
+
+section.inTel{
+    position: relative;
+    height: 627px;
+    width: 311px;
+    margin: auto;
+}
+iframe{
+    position: absolute;
+    left: 22px;
+    top: 80px;
+    width: 268px;
+    height: 473px;
+}
+section.outTel{
+    display: block;
+    float: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+    border-top: 1px solid rgba(255, 255, 255, 0.596);
+    padding-top: 35px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+section.outTel img{   
+    margin: 30px;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+div.nomeApp{
+    display: inline;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+div.nomeApp p{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-56%);
+    opacity: 0;
+    transition: .6s;
+}
+div.nomeApp:hover p{
+    opacity: 1;
+}
+section.outTel a{
+    display: inline-block;
+    margin-bottom: 34px;
+}
+section.outTel a img{
+    display: inline-block;
+    height: 8vh;
+    border-radius: 50%;
+    transition: .6s;
+    
+}
+section.outTel a img:hover{
+    transform: translate(0px, -10px);
+    box-shadow: 5px 3px 5px black;
+    border: 1px solid var(--verde);
+}
+
+
+
+
+
+section.form{
+    margin: auto;
+    width: 60vw;
+    padding: 20px;
+    border-top: 1px solid var(--verde);
+    border-bottom: 1px solid var(--verde);
+    border-radius: 20px;
+}
+section.form h1{
+    text-align: left;
+    padding-bottom: 25px;
+}
+section.form p,label{
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #8b8b8b;
+}
+label.marque{
+    margin-right: 42px;
+    margin-left: 3px;
+}
+section.form input{
+    background-color: black;
+    border: 1px solid var(--verde5);
+    border-radius: 7px;
+    padding: 5px;
+    color: var(--verde);
+    transition: .5s;
+    background-color: #161616;
+}
+section.form input.formalt{
+    margin-left: 3px;
+    padding: 0px;
+}
+section.form input.button{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.8em;
+    transition: .2s;
+}
+section.form input.button:hover, section.form input:hover{
+    color: white;
+    border: 1px solid white;
+}
+fieldset{
+    border: none;
+    border-top: 1px solid var(--verde);
+    border-radius: 15px;
+    margin: 10px;
+}
+legend{
+    margin-bottom: 10px;
+}
+output{
+    color: var(--verde);
+}

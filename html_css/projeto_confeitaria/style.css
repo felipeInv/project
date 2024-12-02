@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/*************************************************************************************/
+
+
+header{ 
+    position: absolute;
+    width: 100%;
+    display: grid;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.555);
+    border-radius: 0 0 25px 25px;
+    padding: 10px;
+    grid-template-areas:
+    "logo lista lista"
+    ;
+    background-color: white;
+}
+header ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+header img{
+    width: 80px;
+    margin-left: 100px;
+    grid-area: lista;
+}
+header img{
+    grid-area: logo;
+}
+
+/*************************************************************************************/
+
+.fundo_bolo1{
+    height: 500px;
+    background-image: url("img/fundo_bolo_chocolate_confeitado.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+/*************************************************************************************/
+
+.fundo_blue{
+    padding: 50px;
+    background-image: url("img/padrao_doces.png");
+    background-color: #84DBDE;
+}
+
+section.sobre_nos{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 4fr 5fr;
+}
+
+.sobre_nos .titulo{
+    font-size: 2em;
+    color: #00676A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sobre_nos .texto_icone{
+    display: flex;
+    flex-direction: row;
+    margin: 25px 100px 25px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.sobre_nos .texto_icone p{
+    width: 400px;
+    margin: 30px 0px 0px 0;
+    font-size: 1.2em;
+    text-indent: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.493);
+    text-align: center;
+}
+
+/*************************************************************************************/
+
+.fundo_bolo2{
+    height: 500px;
+    background-image: url("img/fundo_bolo_churros.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+/*************************************************************************************/
+
+.doces_pg1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.doce_pg1{
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 400px;
+    height: 600px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.452);
+    margin: 30px;
+}
+.doce_pg1 img{
+    width: 400px;
+    border-radius: 0 0 40px 40px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+}
+.doce_pg1 h3{
+    font-size: 1.6em;
+    margin: 15px;
+}
+.doce_pg1 ul li{
+    margin: 20px 0 0 60px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.doce_pg1 button{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #00676A;
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 2px 0px black;
+}
+
+/*************************************************************************************/

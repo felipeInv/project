@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'droid';
+    src: url('fontes/idroid.otf') format(opentype);
+    font-weight: bold; 
+}
+@font-face {
+    font-family:'beba';
+    src: url('fontes/BebasNeue-Regular.ttf') format(Truetype);
+    font-weight: bold; 
+}
+:root{
+    --font1: 'droid';
+    --font2: 'beba';
+    --font3: Arial, Helvetica, sans-serif;
+    --cor1:#c5ebd6;
+    --cor2:#83e1ad;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+}
+*{
+    font-family: var(--font3);
+    line-height: 1.5em;
+}
+body{
+    background-color: var(--cor2);
+    margin: 0px;
+}
+p{
+    text-indent: 20px;
+}
+/* começa o Header*/
+header{
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5));
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+header > h1{
+    font-family: var(--font2);
+}
+header > h1{
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+header > p{
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+header > nav > ul{
+    padding: 0px;
+    margin: 0px;
+}
+header > nav > ul > li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+header > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--cor4);
+    font-weight: 500;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 9px;
+    transition: 1s;
+
+}
+header > nav > ul > li > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+/* Acaba aqui o Header*/
+/* começa o Main*/
+main{
+    background-color: white;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.582);
+}
+main > p{
+    color: #000000;
+    text-align: left;
+}
+main > p > span{
+    color: var(--cor3);
+    font-weight: 600;
+}
+main span:hover{
+    text-decoration: underline;
+}
+main > article > h1,h2{
+    font-family: var(--font1);
+    color:var(--cor3);
+}
+main > article > h2{
+    background-image: linear-gradient(to right, var(--cor3),var(--cor1),var(--cor1),var(--cor1));
+    color: var(--cor5);
+}
+main > article > p{
+    font-family: var(--font3);
+    color: #000000;
+    text-align: justify;
+}
+main > article > p > span{
+    color: var(--cor3);
+    font-weight: 600;
+}
+main > article > p > span > a{
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: 600;
+    background-color: var(--cor2);
+}
+main > article > p > span > a::after{
+    content: '📎';
+}
+.video{
+    text-align: center;
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: 0px -20px 0px -20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.507);
+    position: relative;
+    padding-bottom: 54%;
+}
+.video iframe{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+img,source{
+    display: block;
+    margin: auto;
+}
+img.foto{
+    display: block;
+    margin: auto;
+}
+img.foto2{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+/* Aside*/
+main > aside{
+    background-color: var(--cor2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+}
+main > aside > h2 {
+    font-family: var(--font3);
+    color: white;
+    background-color: var(--cor4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    padding-bottom: 0px;
+}
+main > aside > p{
+    color: black;
+    text-align: justify;
+    width: 95%;
+    margin: auto;
+}
+main > aside > p > span{
+    color: var(--cor3);
+    font-weight: 600;
+}
+main > aside > p > span > a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-weight: 600;
+}
+main > aside > p > span > a::after{
+    content: '📎';
+}
+main > aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\0020\0020';
+}
+/* Acaba o Main*/
+/* começa o Footer*/
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
+}
+footer  a{
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+/* Acaba aqui o Footer*/
+

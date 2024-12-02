@@ -1,0 +1,66 @@
+<hmtl lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <!--ajudar na responsividade-->
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+        <!--descrição da página-->
+        <meta name="description" content="explicando sobre o Google Glass e sua funcionalidades">
+        <!--quem desenvolveu-->
+        <meta name="author" content="luiz Souza">
+        <title>Sobre o Google Glass</title>
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <link rel="stylesheet" href="_css/media.css">
+        <script language="javascript" src="_javascript/funcoes.js"></script>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h2>Google Glass</h2>
+                    <h1>A revolução do Google está chegando</h1>
+                    <img src="_imagens/glass-logo-peq.jpg" alt="logo glass">
+                </hgroup>   
+                <img id="foto-oculos" src="_imagens/glass-oculos-preto-peq.png"/>
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul type="disc">
+                        <li onmouseover="mudaFoto('home')" onmouseout="mudaFoto('multimidia')"><a href="index.html" target="_self"> Home </a></li>
+                        <li onmouseover="mudaFoto('especificacoes')" onmouseout="mudaFoto('multimidia')"><a href="specs.html" target="_self">Especificações</a></li>
+                        <li onmouseover="mudaFoto('fotos')" onmouseout="mudaFoto('multimidia')"><a href="fotos.html" target="_self">Fotos</a></li>
+                        <li onmouseover="mudaFoto('multimidia')" onmouseout="mudaFoto('multimidia')"><a href="multimidia.html"target="_self">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('contato')" onmouseout="mudaFoto('multimidia')"><a href="fale-conosco.html"target="_self">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="corpo-full">
+                <article id="artigo1">
+                    <header>
+                        <hgroup>
+                            <h3>>Glass > Mídia</h3>
+                            <h2>Sons e vídeos do Google Glass</h2>
+                            <h4>por Luiz Souza</h4>
+                            <h4>Atualizado em 21/Agosto/2023</h4>
+                        </hgroup>
+                    </header>
+                </article>
+<div id="tv-radio">
+    <audio id="musica" controls="controls">
+        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+        <source src="_media/2009-lovers-carvings-bibio.aac" type="audio/x-aac"/>
+        <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>
+        desculpe mas não foi possível carregar o aúdio
+    </audio>
+    <video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+        <source src="_media/getting-started.mp4" type="video/mp4"/>
+        <source src="_media/getting-started.webm" type="video/webm"/>
+        <source src="_media/getting-started.ogv" type="video/ogg"/>
+        desculpe mas não foi possível carregar o vídeo
+    </video>
+</div>
+<footer id="rodape">
+    <h4>Copyright&copy; 2023 - by Luiz Souza</h4>
+    <h4>Facebook | Twitter</h4>
+</footer>
+</div>
+</body>
+</hmtl>

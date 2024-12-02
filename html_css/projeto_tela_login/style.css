@@ -1,0 +1,99 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+main{
+    position: relative;
+    background-color: #252525;
+    height: 90vh;
+    width: 35vw;
+    border-radius: 75px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.imagem{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-image: url('img/vetor-fundo.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.formulario{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+    background-color: #252525;
+    border-radius: 80px 80px 75px 75px;
+    z-index: 1;
+    bottom: 0;
+    padding-top: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+span{
+    color: #20CE03;
+}
+h2{
+    font-weight: 300;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+input{
+    border: none;
+    border-bottom: 2px solid #20CE03;
+    color: #20CE03;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+a{
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.esq_senha{
+    text-align: right;
+    margin-bottom: 20px;
+}
+button{
+    font-size: 1.8em;
+    background-color: #20CE03;
+    padding: 10px;
+    border-radius: 20px;
+    color: #222222;
+    border: none;
+}
+div{
+    margin: 0px auto 15px auto;
+    margin-top: 0;
+}

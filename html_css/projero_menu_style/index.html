@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(34, 34, 34);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 97vh;
+        }
+        h1{
+            font-size: 3em;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: 0px;
+        }
+        /*h1:hover{
+            color: rgb(0, 207, 0);
+        }*/
+        .selector{
+            height: 5px;
+            background: linear-gradient(60deg, #00ff00, #008500);
+            width: 0px;
+        }
+        .menu:hover h1{
+            animation: crescer .5s ease forwards;
+        }
+        .menu:hover .selector{
+            animation: crescer .5s ease forwards;
+        }
+        .menu:hover{
+            background-color: rgb(92, 92, 92);
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px black;
+            padding: 10px;
+        }
+        @keyframes crescer {
+            0%{
+                width: 0%;
+                color: white;
+            }
+            100%{
+                width: 100%;
+                color: rgb(0, 207, 0);
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="menu">
+        <h1>Teste</h1>
+        <div class="selector"></div>
+    </div>
+</body>
+</html>
